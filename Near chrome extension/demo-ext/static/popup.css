@@ -1,0 +1,12 @@
+body {
+    width: 400px;
+    height: 300px;
+    background-color: #030712;
+}
+
+@font-face {
+    font-family: 'aquire';
+    src: url('fonts/Aquire-BW0ox.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}

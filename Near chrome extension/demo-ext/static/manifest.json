@@ -1,0 +1,31 @@
+{
+    "manifest_version": 3,
+    "name": "SolEYE",
+    "version": "0.1.0",
+    "description": "My Chrome Extension",
+    "action": {
+        "default_title": "Calculator Extension SvelteKit",
+        "default_popup": "index.html"
+    },
+    "permissions": [
+        "storage",
+        "tabs",
+        "activeTab"
+    ],
+    "host_permissions": [
+        "http://127.0.0.1:8000/*"
+    ],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "<all_urls>"
+            ],
+            "js": [
+                "content.js"
+            ]
+        }
+    ]
+}
